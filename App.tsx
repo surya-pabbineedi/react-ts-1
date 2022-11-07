@@ -1,19 +1,27 @@
 import * as React from 'react';
+import { useState } from 'react';
 import './style.css';
+import Todos from './Todos';
 
 export default function App() {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useState([]);
 
-  const updateCount = () => {
-    setCount((count) => count++);
+  const increment = () => {
+    setCount((c) => c + 1);
+  };
+  const addTodo = () => {
+    setTodos((t) => [...t, 'New Todo']);
   };
 
   return (
     <div>
-      <h1>Why the counter is not incrementing?</h1>
-      <button onClick={() => updateCount()}>
-        I count number of clicks on me - {count}
-      </button>
+      <Todos todos={todos} addTodo={addTodo} />
+      <hr />
+      <div>
+        Count: {count}
+        <button onClick={increment}>+</button>
+      </div>
     </div>
   );
 }
