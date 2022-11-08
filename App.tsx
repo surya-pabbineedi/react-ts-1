@@ -3,12 +3,6 @@ import { Dummy } from './Dummy';
 import './style.css';
 
 export default function App() {
-  const [count, setCount] = React.useState(0);
-
-  const updateCount = () => {
-    setCount((count) => count++);
-  };
-
   return (
     <div>
       <h1>Hello Aspirant!</h1>
