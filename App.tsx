@@ -9,7 +9,7 @@ export default function App() {
       <p>
         Develop react components to retrive user posts and group them by userId
         and display title and body. All the posts should be grouped visually by
-        user first & last name
+        user's first & last name
       </p>
       <p>
         posts:
