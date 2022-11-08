@@ -19,8 +19,7 @@ export default function App() {
     <div>
       <em>
         Upon clicking the counter action Todos component re-renders. Optimize
-        the code so that Todos components re-renders only if todos prop has been
-        changed.
+        the code so that Todos components re-renders when necessary.
       </em>
       <Todos todos={todos} addTodo={addTodo} />
       <hr />
