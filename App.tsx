@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Dummy } from './Dummy';
 import './style.css';
 
 export default function App() {
